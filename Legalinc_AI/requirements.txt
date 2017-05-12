@@ -11,4 +11,7 @@ pytesseract==0.1.6
 six==1.10.0
 Wand==0.4.4
 nltk==3.2.2
-Django==1.10.5
+git+https://github.com/django-nonrel/django.git
+git+https://github.com/django-nonrel/djangotoolbox
+git+https://github.com/django-nonrel/mongodb-engine
+mongoengine
