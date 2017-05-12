@@ -1,0 +1,14 @@
+*.whl
+*.pyc
+.project
+.pydevproject
+**/.idea
+**/.DS_Store
+*.log
+*.sh
+**/local.py
+**/media/*
+**/migrations
+*.mp4
+**/logfile.txt
+**/uploads/
