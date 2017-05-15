@@ -12,3 +12,4 @@
 *.mp4
 **/logfile.txt
 **/uploads/
+.idea/
