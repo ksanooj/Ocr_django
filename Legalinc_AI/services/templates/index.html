@@ -1,0 +1,27 @@
+
+
+{% load staticfiles %}
+<head>
+    <link href="{%  static "style.css" %}" rel="stylesheet">
+</head>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th> <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for file in files %}
+    <tr><td><a href="{{ file.pdf_doc.url }}">{{ file.name }}</a></td><td><button class="editbtn">Show company names</button></tr>
+{% endfor %}
+
+
+  </tbody>
+</table>
+
+
+
+
