@@ -10,6 +10,7 @@
 **/media/*
 **/migrations
 *.mp4
+services/data/*
 **/logfile.txt
 **/uploads/
 .idea/
