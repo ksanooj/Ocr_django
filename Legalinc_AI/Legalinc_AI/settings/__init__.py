@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'services'
+    'services',
+    'djcelery',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,7 +85,7 @@ WSGI_APPLICATION = 'Legalinc_AI.wsgi.application'
 DATABASES = {
    'default' : {
       'ENGINE' : 'django_mongodb_engine',
-      'NAME' : 'my_database'
+      'NAME' : 'my_db'
    }
 }
 
@@ -110,3 +111,5 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+BROKER_URL = "amqp://sanooj:password@localhost:5672/vhost"
